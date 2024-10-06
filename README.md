@@ -1,4 +1,4 @@
-# My assessment Repository
+# My Assessment Repository
 
 **by Hugo Camacho (g00438861@atu.ie)**
 
