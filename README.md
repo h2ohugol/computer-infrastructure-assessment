@@ -1,6 +1,7 @@
 # My Assessment Repository
 
-**by Hugo Camacho (g00438861@atu.ie)**
+**by Hugo Camacho [ATU](https://www.atu.ie/)**
+
 
 
 This repository contains my assesment submission for the computer infrastructure module
