@@ -1,7 +1,7 @@
 # My Assessment Repository
 
 
- ! [](imaghttps://oikotimes.com/wp-content/uploads/2022/06/cloud.jpge)
+ ![](https://oikotimes.com/wp-content/uploads/2022/06/cloud.jpg) 
 
 
 
