@@ -11,7 +11,3 @@
 
 
 This repository contains my assesment submission for the computer infrastructure module
-
-
-
-
