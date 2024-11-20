@@ -1,0 +1,21 @@
+Task 8: Notebook
+Create a notebook called weather.ipynb at the root of your repository. In this notebook, 
+write a brief report explaining how you completed Tasks 1 to 7. 
+Provide short descriptions of the commands used in each task and explain their role in 
+completing the tasks
+
+
+This notebook contains the Research documentation on the tasks developed throughout the 
+Computer Infrastructure lectures given by Mr. McLoughlin at ATU.
+
+Introduction
+
+The Computer Infrastructure development over the year it has been changed a lot and it is hard where to start 
+
+Task 1 Create Directory Structure
+Task 2 Timestamps
+Task 3 Formatting Timestamps
+Task 4 Create Timestamped files
+Task 5 Download Today’s Weather Data
+Task 6 Timestamp the Data 
+Task 7 Write the Script
