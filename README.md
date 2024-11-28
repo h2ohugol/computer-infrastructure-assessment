@@ -4,4 +4,4 @@
 
 **by Hugo Camacho Romero [ATU](https://www.atu.ie/)**
 
-This repository contains my assesment submission for the computer infrastructure module
+This repository contains my assessment submission for the computer infrastructure module
