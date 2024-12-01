@@ -1,4 +1,4 @@
-Task 8: Notebook
+# Task 8: Notebook
 Create a notebook called weather.ipynb at the root of your repository. In this notebook, 
 write a brief report explaining how you completed Tasks 1 to 7. 
 Provide short descriptions of the commands used in each task and explain their role in 
@@ -8,14 +8,73 @@ completing the tasks
 This notebook contains the Research documentation on the tasks developed throughout the 
 Computer Infrastructure lectures given by Mr. McLoughlin at ATU.
 
-Introduction
+## Introduction
 
-The Computer Infrastructure development over the year it has been changed a lot and it is hard where to start 
+In this module, we’ll work through a series of tasks aimed at building foundational 
+skills for handling data through the command line and automating processes. These tasks will cover 
+creating a structured directory for data organization, understanding timestamps and their significance 
+in tracking events, and formatting them effectively. We will also explore how to use APIs to download 
+structured data and automate the process using scripts. By the end, you'll gain practical experience in 
+data handling, automation, and organizing data for efficient management. 
 
-Task 1 Create Directory Structure
-Task 2 Timestamps
-Task 3 Formatting Timestamps
-Task 4 Create Timestamped files
-Task 5 Download Today’s Weather Data
-Task 6 Timestamp the Data 
-Task 7 Write the Script
+Let’s dive into each task step by step:
+
+### Task 1: Create Directory Structure 
+
+Begin by setting up a simple directory structure using the command line. This involves creating a data folder at 
+the root of your repository and adding two subdirectories: timestamps and weather. This step is essential as it lays the 
+foundation for organizing files and data throughout the project. Using terminal commands, you will establish a clean and 
+organized folder hierarchy to ensure a systematic approach for subsequent tasks.
+
+### Task 2: Timestamps
+
+Understand the importance of timestamps and how to create them for tracking events, especially when working across different 
+time zones. This task introduces the basics of handling timestamps, an essential yet often overlooked skill. Navigate to the 
+data/timestamps directory and use the date command to log the current date and time into now.txt, appending entries with 
+the >> operator. Repeat this process ten times and use the more command to check that now.txt contains all the expected entries.
+
+### Task 3: Formatting Timestamps
+
+Format timestamps to include the year, month, day, hour, minute, and second using the date command in a custom format 
+(e.g., YYYYmmdd_HHMMSS). This is especially useful for preventing duplicate filenames in fast-paced processes. While milliseconds 
+could be used for higher precision, we'll focus on second-level accuracy. For example, a formatted timestamp could look 
+like 20241110_153045 for 3:30:45 PM on November 10, 2024. Explore additional formatting options by checking the man date manual 
+(exit with q). Append the formatted timestamp to formatted.txt using the >> operator.
+
+### Task 4: Create Timestamped Files
+
+Generate timestamped files using the touch command combined with a formatted date command. This approach creates files with 
+names based on the current timestamp (e.g., YYYYmmdd_HHMMSS.txt), which helps keep them organized chronologically without 
+needing redirection. By embedding the date command within backticks, you can dynamically create a file with a timestamped name, 
+simplifying file management and maintaining an orderly structure. This method streamlines file creation while ensuring unique 
+and sortable filenames.
+
+### Task 5: Download Today’s Weather Data
+
+Navigate to the data/weather directory and use wget to retrieve the latest weather data for the Athenry station from Met Éireann’s API. 
+Save the output as weather.json by using the -O <filename> option. This method allows you to access structured weather information 
+programmatically, avoiding the need for manual data scraping from a webpage. The data can be fetched through Metweb's API endpoint, 
+simplifying integration and enhancing project workflows.
+
+### Task 6: Timestamp the Data
+
+Enhance the wget command to save the weather data with a timestamped filename (e.g., YYYYmmdd_HHMMSS.json) for better tracking 
+and organization. By using Metweb’s API, you can access structured weather information for the Athenry station. Modify the previous 
+wget command from Task 5 so the downloaded file includes a timestamp in its name. This approach helps keep your data organized and 
+allows for easy retrieval based on when the data was collected.
+
+### Task 7: Write the Script
+
+Create a bash script, weather.sh, in the root directory to automate the process outlined in Task 6. This script should handle downloading 
+the current weather data from Met Éireann, saving it with a timestamped filename in the data/weather directory. Once you’ve written the script, 
+make it executable using chmod +x weather.sh, and test it to ensure it runs smoothly and stores data as expected. This automation will 
+streamline data collection and help keep your workflow efficient.
+
+
+
+
+
+
+
+
+
