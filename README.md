@@ -14,6 +14,7 @@ formatting them, and using them for file creation, also, download structured wea
 API, timestamp the data, and automate the process using a bash script.
 
 ## Tools & Context
+source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/INSTALL.md#github)
 
 ### GitHub
 
