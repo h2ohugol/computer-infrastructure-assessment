@@ -6,15 +6,38 @@
 
 This repository contains my assessment submission for the computer infrastructure module
 
-Overview
+## Overview
+
+The command line environment will be used to configure, script manipulate and move data, this will be different.
+from user graphical interfaces or GUIs. GitHub, GitHub codespaces, Phyton (Anaconda), Visual Studio Code,
+and Jupyter notebooks will be the primary technologies to use.
 
 This project focuses on learning essential data handling and automation skills using the
 command line. Work will be through tasks that involve creating directory structures, handling timestamps,
 formatting them, and using them for file creation, also, download structured weather data from Met Éireann's
 API, timestamp the data, and automate the process using a bash script.
 
-## Tools & Context
-source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/INSTALL.md#github)
+Tasks Summary
+
+1.Create Directory Structure: Set up folders using the command line.
+
+2.Timestamps: Log and verify timestamps in a file.
+
+3.Formatting Timestamps: Format timestamps to prevent duplicate filenames.
+
+4.Create Timestamped Files: Generate files with timestamped names.
+
+5.Download Weather Data: Retrieve weather data using wget.
+
+6.Timestamp the Data: Save downloaded data with a timestamped filename.
+
+7.Write the Script: Automate the download and save process with a bash script.
+
+Each task builds a foundational understanding for data management and automation in a simple yet powerful way
+
+## Context
+
+source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastructure/tree/main)
 
 ### GitHub
 
@@ -33,21 +56,3 @@ source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastr
 
 1. [Download the Anaconda Python Distribution.](https://www.anaconda.com/download/success)
 2. Update Anaconda: `conda update --all` (as in command line).
-
-Tasks Summary
-
-1.Create Directory Structure: Set up folders using the command line.
-
-2.Timestamps: Log and verify timestamps in a file.
-
-3.Formatting Timestamps: Format timestamps to prevent duplicate filenames.
-
-4.Create Timestamped Files: Generate files with timestamped names.
-
-5.Download Weather Data: Retrieve weather data using wget.
-
-6.Timestamp the Data: Save downloaded data with a timestamped filename.
-
-7.Write the Script: Automate the download and save process with a bash script.
-
-Each task builds a foundational understanding for data management and automation in a simple yet powerful way.
