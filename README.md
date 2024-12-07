@@ -8,7 +8,7 @@ This repository contains my assessment submission for the computer infrastructur
 
 ## Overview
 
-The command line environment will be used to configure, script manipulate and move data, this will be different.
+The Linux command line environment will be used to configure, script manipulate and move data, this will be different.
 from user graphical interfaces or GUIs. GitHub, GitHub codespaces, Phyton (Anaconda), Visual Studio Code,
 and Jupyter notebooks will be the primary technologies to use.
 
@@ -33,11 +33,15 @@ Tasks Summary
 
 7.Write the Script: Automate the download and save process with a bash script.
 
-Each task builds a foundational understanding for data management and automation in a simple yet powerful way
+Each task builds a foundational understanding for data management and automation in a simple yet powerful way.
 
-## Context
+## Context installer
 
-source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastructure/tree/main)
+Source: [Ian McLoughlin](https://github.com/ianmcloughlin/2425_computer_infrastructure/tree/main)
+
+Within the context we will navigate through the environment to create and develope programs using Linux command
+line. The following information will lead us to the steps  from singing up to GitHub, GitHub Pro to use
+codespaces, Git, Visual Studio Code and Anaconda.
 
 ### GitHub
 
