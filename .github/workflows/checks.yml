@@ -38,6 +38,3 @@ jobs:
               env:
                 # Ensure permissions for pushing changes
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-                    
