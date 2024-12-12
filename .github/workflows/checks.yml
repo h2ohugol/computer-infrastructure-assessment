@@ -11,6 +11,4 @@ jobs:
             - name: Install fortune and cowsay
               run: sudo apt-get install fortune and cowsay
             - name: Test fortune
-              run: /usr/games/fortune  /usr/games/cowsay
-              
-              
+              run: /usr/games/fortune | /usr/games/cowsay
