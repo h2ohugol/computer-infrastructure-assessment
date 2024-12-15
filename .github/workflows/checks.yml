@@ -1,4 +1,4 @@
-name: Generate and Save a Fortune
+name: Generate and Save Fortune
 
 on:
   schedule:
@@ -11,6 +11,7 @@ permissions:
 jobs:
   generate_fortune:
         runs-on: ubuntu-latest
+
         steps:
             #Step 1: Check out the repository
             - name: Check out the repository
@@ -33,6 +34,7 @@ jobs:
               run: |
                 git config --global user.name "github-actions[bot]"
                 git config --global user.email  "github-actions[bot]@users.noreply.github.com"
+                git commit -m "adding today's fortune"
                 git add .
                 git push
               env:
