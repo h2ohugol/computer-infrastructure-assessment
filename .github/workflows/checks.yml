@@ -4,39 +4,40 @@ on:
   schedule:
     - cron: "0 3 * * *" # Run at 3am every day
   workflow_dispatch: # Allows manual triggering of the workflow
- 
+
 permissions:
   contents: write
 
 jobs:
   generate_fortune:
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-        steps:
-            #Step 1: Check out the repository
-            - name: Check out the repository
-              uses: actions/checkout@v3
+    steps:
+      # Step 1: Check out the repository
+      - name: Check out the repository
+        uses: actions/checkout@v3
 
-            #Step 2: Install cowsay and fortune
-            - name: Install dependencies
-              run: |
-                sudo apt update
-                sudo apt install -y cowsay fortune
+      # Step 2: Install cowsay and fortune
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y cowsay fortune
 
-            # Step 3: Generate a fortune and save it to a file
-            - name: Generate fortune and save
-              run: |
-                mkdir -p data/fortunes
-                fortune | cowsay > `date +"data/fortunes/%Y%m%d_%H%M%S.txt"`
+      # Step 3: Generate a fortune and save it to a file
+      - name: Generate fortune and save
+        run: |
+          mkdir -p data/fortunes
+          fortune | cowsay > `date +"data/fortunes/%Y%m%d_%H%M%S.txt"`
 
-            # Step 4: Commit and push the generated fortune changes
-            - name: Commit and push changes
-              run: |
-                git config --global user.name "github-actions[bot]"
-                git config --global user.email  "github-actions[bot]@users.noreply.github.com"
-                git commit -m "adding today's fortune"
-                git add .
-                git push
-              env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Ensure permissions for pushing changes
+      # Step 4: Commit and push the generated fortune changes
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .  # Add untracked files to staging
+          git commit -m "Adding today's fortune"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
                 
